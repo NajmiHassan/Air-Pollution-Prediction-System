@@ -1,16 +1,19 @@
-import joblib
- 
-# Load trained models
-regression_model = joblib.load("regression_model.pkl")
-classification_model = joblib.load("classification_model.pkl")
-
+import pickle
 import streamlit as st
 import numpy as np
-import joblib
+import os
 
-# Load trained models
-regression_model = joblib.load("regression_model.pkl")
-classification_model = joblib.load("classification_model.pkl")
+# Load the regression model
+with open("regression_model.pkl", "rb") as f:
+    regression_model = pickle.load(f)
+
+print("Regression model loaded successfully!")
+
+# Load the classification model
+with open("classification_model.pkl", "rb") as f:
+    classification_model = pickle.load(f)
+
+print("Model loaded successfully!")
 
 # Streamlit UI
 st.title("🌍 Air Pollution Prediction System")
