@@ -1,14 +1,14 @@
-# 🌍 Air Pollution Prediction System
+#  Air Pollution Prediction System
 
 A machine learning-based web application that predicts PM2.5 levels and air quality using environmental and demographic factors.
 
-## 📋 Overview
+## Overview
 
 This system uses trained regression and classification models to predict:
 - **PM2.5 Concentration** (µg/m³) - Fine particulate matter levels
 - **Air Quality Level** - Classification into Good, Moderate, Poor, or Hazardous
 
-## 🎯 Features
+##  Features
 
 - Real-time air quality predictions
 - User-friendly web interface built with Streamlit
@@ -84,4 +84,4 @@ The application will open in your browser at `http://localhost:8501`
 - `app.py`: Streamlit web application interface
 - Model files: Pre-trained pickle files for predictions
 
-## Made with ❤️ by Najmi Hassan
+## Made by Najmi Hassan
